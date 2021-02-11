@@ -10,8 +10,7 @@ const passport = require('passport');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({ secret: 'i@N7yVv*62#9' }));
-app.use(passport.initialize());
-
+app.use(passport.initialize())
 app.use(passport.session())
 
 //adding routes to the API and view
